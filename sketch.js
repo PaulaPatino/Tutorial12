@@ -12,7 +12,9 @@ function setup() {
   // Crea un objeto de sintetizador de audio
   speech = new p5.Speech();
   // Configura el idioma del sintetizador en español
-  speech.setLang("es");
+  speech.setLang("fr-FR");
+  speech.setRate(0.5);
+  speech.listVoices();
 }
 
 // FUNCIÓN DE PINTADO
@@ -30,5 +32,5 @@ function draw() {
 // FUNCIÓN DE CAPTURA DEL CLIC DEL RATÓN
 function mouseClicked() {
   // Sintetiza en voz el texto pasado como parámetro
-  speech.speak("Curso de Arquitectura de Sistemas Multimedia");
+  speech.speak("Bonjour ! J'ai terminé tous les défis.");
 }
