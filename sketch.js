@@ -13,6 +13,8 @@ function setup() {
   speech = new p5.Speech();
   // Configura el idioma del sintetizador en español
   speech.setLang("fr-FR");
+  speech.setVoice("Google français");
+  speech.setVoice("Microsoft Hortense - French (France)");
   speech.setRate(0.5);
   speech.listVoices();
 }
